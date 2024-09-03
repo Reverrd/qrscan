@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+   
+    background-color: #00BF91;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qr-container{
+    position: relative;
+    width: 20%;
+    
+    
+  }
+  .qr-instruction-wrapper{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    /* height: 200px; */
+  }
+ .qr-instruction{
+  text-align: center;
+ }
+ .qrHead{
+  padding: 20px 0;
+ }
+ .qr-codemain{
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  left: 0;
+  top: 30%;
+  z-index: 20;
+  border: 3px solid white;
+ }
+ .qr-codemain img{
+  width: 100%;
+ }
+ button{
+  background-color: #00BF91;
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+ }
+ .scanBtn{
+  width: 80%;
+  padding-bottom: 20px;
+  
+ }
+/* ------screen------ */
+@media screen and (max-width:768px) {
+  .qr-container{
+    width: 50%;
+  }
+}
+@media screen and (max-width:468px) {
+  .qr-container{
+    width: 80%;
+  }
+}
